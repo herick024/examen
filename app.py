@@ -1,6 +1,9 @@
 import web
+import data
 
 render = web.template.render('views/')
+dat = data.Data()
+
 
 urls = (
      '/','index',
@@ -13,10 +16,10 @@ class index:
          return render.index()
 class about:
     def GET(self):
-        return about
+        return render.about()
 class data:
     def GET(self):
-        return render.data()
+        return render.data(info)
     
 
 if __name__ == '__main__':
