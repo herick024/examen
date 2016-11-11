@@ -15,8 +15,8 @@ class about:
     def GET(self):
         return about
 class data:
-    def GET(self)
-        return.render.data()
+    def GET(self):
+        return render.data()
     
 
 if __name__ == '__main__':
